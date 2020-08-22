@@ -1,0 +1,50 @@
+{
+    "name": "root",
+    "isLeaf": false,
+    "descendants": [
+        {
+            "name": "web",
+            "isLeaf": false,
+            "descendants": [
+                {
+                    "name": "settitle",
+                    "isLeaf": true,
+                    "successMsg": "Setting webview title succeeds!",
+                    "params": [
+                        {
+                            "key": 1,
+                            "name": "title",
+                            "type": "regular",
+                            "reaction": "SET_TITLE"
+                        }
+                    ]
+                },
+                {
+                    "name": "info",
+                    "isLeaf": false,
+                    "descendants": [
+                        {
+                            "name": "getContact",
+                            "isLeaf": true,
+                            "successMsg": "Getting contact information succeeds！",
+                            "params": [
+                                {
+                                    "key": 1,
+                                    "name": "callback",
+                                    "type": "callback",
+                                    "data": {
+                                        "contacts": [
+                                            "John",
+                                            "Mary",
+                                            "Lily"
+                                        ]
+                                    }
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}
